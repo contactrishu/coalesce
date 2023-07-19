@@ -2,13 +2,25 @@ defaultStorageMapping: DWH
 jobs: {}
 locations:
   DWH:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RISHU_PROD
+        schema: DWH
   SOURCE:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
   STAGE:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RISHU_PROD
+        schema: STG
   VIEW:
-    mappingDefinitions: {}
+    mappingDefinitions:
+      "2":
+        database: RISHU_PROD
+        schema: VW
 macros: {}
 packages: {}
 projects: {}
