@@ -1,5 +1,12 @@
 defaultStorageMapping: DWH
-jobs: {}
+jobs:
+  Job-26:
+    excludeSelector: ""
+    id: 26
+    includeSelector: "+{ name: FCT* }"
+    name: FactRefresh
+    steps: []
+    subgraphs: []
 locations:
   DWH:
     mappingDefinitions:
