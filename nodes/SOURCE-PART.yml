@@ -1,0 +1,154 @@
+steps:
+  PART-ebb6506f-4afd-48f2-af5c-c2d03cd71974:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Part data as defined by TPC-H
+      locationID: ""
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cadad1fa-8417-47a0-86e9-d7c1ffef551d
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: P_PARTKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 02b15df2-3d23-4455-a261-e0b855e9e606
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: VARCHAR(55)
+            defaultValue: ""
+            description: ""
+            name: P_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 96e4f56d-a90b-4127-bb0d-e0364d7a0465
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: P_MFGR
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cecd24e9-7fc0-4bf9-aa8a-84bc61f3d99f
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: P_BRAND
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6ba692aa-bc31-4868-a323-4f5553efa751
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: P_TYPE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 22bd3d27-aca6-4e83-8cd8-97127afeda3f
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: P_SIZE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d22fa29e-3f56-4284-b196-e1ba3ed1596e
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: VARCHAR(10)
+            defaultValue: ""
+            description: ""
+            name: P_CONTAINER
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 85f7d5f6-4565-4eb3-bfb9-6d131769373e
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: NUMBER(12,2)
+            defaultValue: ""
+            description: ""
+            name: P_RETAILPRICE
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b71bb2b0-ede7-4474-b37f-a183030a7952
+              stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
+            config: {}
+            dataType: VARCHAR(23)
+            defaultValue: ""
+            description: ""
+            name: P_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'PART') }}
+      name: PART
+      schema: ""
+      sqlType: Source
+      table: PART
+      type: sourceInput
+    stepCounter: ebb6506f-4afd-48f2-af5c-c2d03cd71974
