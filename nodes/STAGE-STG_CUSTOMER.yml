@@ -9,7 +9,7 @@ steps:
         truncateBefore: true
       database: ""
       deployEnabled: true
-      description: Comment committed in Main
+      description: comments added in feature 1 branch
       isMultisource: false
       locationName: STAGE
       materializationType: table
