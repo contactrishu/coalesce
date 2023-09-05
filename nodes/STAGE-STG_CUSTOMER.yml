@@ -9,7 +9,7 @@ steps:
         truncateBefore: true
       database: ""
       deployEnabled: true
-      description: Customer data as defined by TPC-H
+      description: comments added in feature 1 branch
       isMultisource: false
       locationName: STAGE
       materializationType: table
