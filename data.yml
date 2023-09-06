@@ -635,7 +635,7 @@ stepTypes:
             - table
             - view
 
-          - displayName: Table Level Tag(s)
+          - displayName: Object Level Tag(s)
             attributeName: tableTag
             type: textBox
             isRequired: false
