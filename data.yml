@@ -620,7 +620,7 @@ stepTypes:
       defaultStorageLocation: DWH
       error: null
       nodeMetadataSpec: |-
-        capitalized: Copy of Dimension
+        capitalized: Dimension with Tagging
         short: DIM
         tagColor: '#1E339A'
         plural: Dimensions
@@ -635,7 +635,7 @@ stepTypes:
             - table
             - view
 
-          - displayName: Table Level Tags ( <tag_name> = '<tag_value>' [ , <tag_name> = '<tag_value>' , ... ] )
+          - displayName: Table Level Tag(s)
             attributeName: tableTag
             type: textBox
             isRequired: false
