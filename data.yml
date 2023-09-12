@@ -66,6 +66,23 @@ locations:
       "2":
         database: RISHU_PROD
         schema: STG
+  TAG:
+    mappingDefinitions:
+      "16":
+        database: RISHU_PROD
+        schema: PUBLIC
+      "2":
+        database: ""
+        schema: ""
+      "5":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+      "9":
+        database: ""
+        schema: ""
   VIEW:
     mappingDefinitions:
       "16":
