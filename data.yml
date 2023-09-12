@@ -66,6 +66,23 @@ locations:
       "2":
         database: RISHU_PROD
         schema: STG
+  TAG:
+    mappingDefinitions:
+      "16":
+        database: RISHU_PROD
+        schema: PUBLIC
+      "2":
+        database: ""
+        schema: ""
+      "5":
+        database: ""
+        schema: ""
+      "7":
+        database: ""
+        schema: ""
+      "9":
+        database: ""
+        schema: ""
   VIEW:
     mappingDefinitions:
       "16":
@@ -620,7 +637,7 @@ stepTypes:
       defaultStorageLocation: DWH
       error: null
       nodeMetadataSpec: |-
-        capitalized: Copy of Dimension
+        capitalized: Dimension with Tagging
         short: DIM
         tagColor: '#1E339A'
         plural: Dimensions
@@ -635,7 +652,7 @@ stepTypes:
             - table
             - view
 
-          - displayName: Table Level Tags ( <tag_name> = '<tag_value>' [ , <tag_name> = '<tag_value>' , ... ] )
+          - displayName: Object Level Tag(s)
             attributeName: tableTag
             type: textBox
             isRequired: false
