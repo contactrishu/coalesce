@@ -1,0 +1,478 @@
+steps:
+  FCT_LINEITEM_ORDERS_DIM-262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d:
+    operation:
+      config:
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+      database: ""
+      deployEnabled: true
+      description: ""
+      isMultisource: false
+      locationName: DWH
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 90eaf4d6-5147-4f44-a1ec-a70f5a77cb48
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_ORDERKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ced2f8e9-f462-4540-b9e9-09e19153ca5e
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 9724ba77-57f6-4f0a-99b4-d714bee0d411
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_PARTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d1518061-141b-49f6-a791-7f03eb5481f6
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 641276b1-a207-4297-a90d-171192dac772
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_SUPPKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: c6ba26c7-0af0-44a8-8d12-440090a90630
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 8f001eb1-7614-43a0-85ce-30496ea2086a
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_LINENUMBER
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: f139a0b2-7894-4a32-9a1e-b1c46de123f1
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: d21fd9e5-91b2-4981-8a7b-74c79dda64eb
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_QUANTITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8ebff411-e937-4dd2-b9c2-623151220486
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 17f110b1-f58c-4439-bf68-3a5876456244
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_EXTENDEDPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1086b46c-9d97-4ca0-adbf-973d6889c1cd
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: eb1514e8-bf48-4985-b152-1342561bfdc5
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_DISCOUNT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: e2b23074-6491-4a5e-9677-9b1654d16b70
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: f86ab839-f0ea-4009-ae1e-54fc302a9fa8
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_TAX
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 08da1473-cb6d-4925-b273-3d74e410bedc
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: d1647729-91e4-4ac4-b656-f258334ee5ab
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DIM_CUSTOMER_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 83b5a558-276f-4a2c-b752-6fadd52d8399
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 963b7f16-68e8-452a-9455-e3a9b3f51b60
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_RETURNFLAG
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 3ad72ec1-728e-4d6c-84c5-24d80d73da6a
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: d7a484b7-4cdf-4f99-9310-dc46f8a274ba
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_LINESTATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cafd511d-c1fc-4c04-a28b-af7d2eeab281
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: c7406881-f518-4799-8161-e49e7f28a419
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_SHIPDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9afaa152-01d9-47c8-accb-20bef926c8ee
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: da389d54-621a-4e6c-99b4-370dd581c450
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_COMMITDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8c4128a7-bce9-4d05-97c7-8a5636f8f05c
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 10899bb8-6388-4a30-91b1-5ea48e6fdc97
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DIM_SUPPLIER_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 195f0f91-c35a-45fc-8d18-41b9910ce7b6
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 4729e4f4-53cf-454e-952a-6172d4494c88
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_RECEIPTDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 1e7d770c-afcd-4e2c-8abf-16217ae27152
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 2c760b50-1a19-44ba-9960-a1d8a933e28e
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: DIM_PART_KEY
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4a6e6b19-e437-40e6-8cc9-3ba537cde17c
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: dc9232d4-7336-4089-a675-6efb1ffb60a5
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_SHIPINSTRUCT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: de84e714-7c5c-43fa-9e2a-67c33bdba4b0
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 256d5149-85d2-41e3-b0b7-c630060427c7
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(10)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_SHIPMODE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0c2eff17-c78a-4963-b07c-2802fe39d664
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 344ca52f-0e25-4cc7-8f61-8ec0959d04df
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(44)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: L_COMMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 91f42fa3-9f0a-467b-915a-27887169799f
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 3450f44d-31a8-4376-bac5-934529903b26
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ad726b61-2eba-48a0-8719-71d4f5380a93
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: f437bb10-2886-40d6-b370-f767561d8f44
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_CUSTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: db252c7f-aac0-43d8-99bb-3bac0d25e029
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 8be5d708-c950-4591-90dc-e27a071702d9
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(1)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERSTATUS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: a8400c12-64cf-4e72-8a95-6fcc7fe4da82
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: d8b297e3-05f6-4304-8565-a3ea5d90ca7b
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_TOTALPRICE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 9d1198cc-a16f-49a8-a2ee-c0d0a87a6756
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 5fca1c1b-33a3-4885-ba3b-06ef71a69adc
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: DATE
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERDATE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 5905c29e-a405-48aa-a8be-8f422c2d9608
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 9336c236-be4e-43c7-a189-13d4c03c66e8
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(15)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_ORDERPRIORITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 00d25971-2640-4496-b17a-67c46d76499c
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 6974496a-3ee0-4766-92a9-215509ab7520
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(15)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_CLERK
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 4aead8c6-980c-4c04-a480-8fe7021e80c6
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: 77ad2412-d3f7-4056-abca-02c9a5586afb
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_SHIPPRIORITY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 13a522b6-2349-4be4-a1fe-9f938a6b5591
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - columnReference:
+              columnCounter: ce66562f-b2bd-4d87-bb45-f1ff9f88d73a
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: VARCHAR(79)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: O_COMMENT
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 8dbe2969-e872-4bbc-9629-0abaa7951ec5
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a63d2f4a-1979-425d-a939-73e56f2eff7f
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemCreateDate: true
+            name: SYSTEM_CREATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: a3075b46-71e3-47db-a6e6-ed9cf212be42
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            config: {}
+            dataType: TIMESTAMP
+            defaultValue: ""
+            description: ""
+            hashColumns: []
+            isSystemUpdateDate: true
+            name: SYSTEM_UPDATE_DATE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c71649a9-e007-4e77-8b4e-e8aa05bd9608
+              stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d
+            dataType: STRING
+            description: This is a Customer table column
+            name: C_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 0d809220-ceaf-459a-aa76-2879c09efd0c
+                    stepCounter: 4c3e82e1-9b1d-4aa9-ba6b-18a2a4c0403c
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: STAGE
+                nodeName: STG_LINEITEM_ORDERS_DIM
+            join:
+              joinCondition: FROM {{ ref('STAGE', 'STG_LINEITEM_ORDERS_DIM') }} "STG_LINEITEM_ORDERS_DIM"
+            name: FCT_LINEITEM_ORDERS_DIM
+            noLinkRefs: []
+      name: FCT_LINEITEM_ORDERS_DIM
+      overrideSQL: false
+      schema: ""
+      sqlType: Fact
+      type: sql
+    stepCounter: 262eb1a4-b31b-49d9-b0ab-0ff4c6bfd20d

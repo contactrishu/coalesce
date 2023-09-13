@@ -1,0 +1,49 @@
+steps:
+  DAILY_14_TOTAL_SHORT-4a3ce281-2fd4-4c48-857c-d745804c4e0f:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: SOURCE_WEATHER_JSON
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c03ce8e2-eaec-444a-88d0-77496a35752f
+              stepCounter: 4a3ce281-2fd4-4c48-857c-d745804c4e0f
+            config: {}
+            dataType: VARIANT
+            defaultValue: ""
+            description: ""
+            name: V
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e2c4df30-8022-4bd3-9f32-3f3053b39d54
+              stepCounter: 4a3ce281-2fd4-4c48-857c-d745804c4e0f
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: T
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE_WEATHER_JSON', 'DAILY_14_TOTAL_SHORT') }}
+      name: DAILY_14_TOTAL_SHORT
+      schema: ""
+      sqlType: Source
+      table: DAILY_14_TOTAL_SHORT
+      type: sourceInput
+    stepCounter: 4a3ce281-2fd4-4c48-857c-d745804c4e0f

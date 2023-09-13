@@ -1,0 +1,176 @@
+steps:
+  STG_CUSTOMER-a508115a-fed3-4404-9de1-bc883431d18c:
+    operation:
+      config:
+        insertStrategy: INSERT
+        postSQL: ""
+        preSQL: ""
+        testsEnabled: true
+        truncateBefore: true
+      database: ""
+      deployEnabled: true
+      description: Customer data as defined by TPC-H
+      isMultisource: false
+      locationName: STAGE
+      materializationType: table
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - appliedColumnTests:
+              hasNull: true
+              isDistinct: true
+            columnReference:
+              columnCounter: 8c32a4c1-096f-4fac-83a1-cf7ec2a0880c
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: NUMBER(38,0)
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_CUSTKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 367a40e0-4904-48ad-b439-ec166f199fef
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: ""
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 2cc2c3aa-5c80-45fd-96d7-e419a81f26e0
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: STRING
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 530393b6-5664-44f3-910f-d0244219e774
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: UPPER("CUSTOMER"."C_NAME")
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 7463ce19-fe91-439b-9609-799875522bed
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: STRING
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 68e1eef1-9573-4c3c-b1c2-965bbc05b4bb
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: UPPER("CUSTOMER"."C_ADDRESS")
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3f9d0c70-5815-41fb-b836-48a02e658eaa
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: NUMBER(38,0)
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_NATIONKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 32c0c005-2585-4ed1-9f54-da1aa3188939
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: UPPER("CUSTOMER"."C_NATIONKEY")
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 25636e62-fc29-47a0-93d3-08b223e09dfc
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: STRING
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: ecb49800-ae15-4784-937e-df02466fda05
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: UPPER("CUSTOMER"."C_PHONE")
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 3181dace-9485-417a-a979-228d0e858db9
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: NUMBER(12,2)
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_ACCTBAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: d2c5a2c7-a2ef-4bb4-89b0-4f7bbcf437ee
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: UPPER("CUSTOMER"."C_ACCTBAL")
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: b6bbcf0d-8f3c-41f0-99ed-23dfec9d928f
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: STRING
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_MKTSEGMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 367f23b4-8e2b-4381-adcc-60fe7828d5fe
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: UPPER("CUSTOMER"."C_MKTSEGMENT")
+          - appliedColumnTests:
+              hasNull: false
+              isDistinct: false
+            columnReference:
+              columnCounter: 5e2db176-0d26-49d6-b02d-81f7700e6e3b
+              stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
+            dataType: STRING
+            description: This is a Customer table column
+            hashColumns: []
+            hashDetails: null
+            name: C_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7bc8e4f4-792b-4f7f-b226-684eb05ac6f4
+                    stepCounter: 28591c44-59b2-4d62-b8fd-381419ba6c55
+                transform: UPPER("CUSTOMER"."C_COMMENT")
+        cteString: ""
+        enabledColumnTestIDs:
+          - hasNull
+          - isDistinct
+        sourceMapping:
+          - aliases:
+              CUSTOMER: 28591c44-59b2-4d62-b8fd-381419ba6c55
+            customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SOURCE
+                nodeName: CUSTOMER
+            join:
+              joinCondition: FROM {{ ref('SOURCE', 'CUSTOMER') }} "CUSTOMER"
+            name: STG_CUSTOMER
+            noLinkRefs: []
+      name: STG_CUSTOMER
+      overrideSQL: false
+      schema: ""
+      sqlType: Stage
+      type: sql
+    stepCounter: a508115a-fed3-4404-9de1-bc883431d18c
