@@ -1,13 +1,6 @@
 defaultStorageMapping: DWH
 installedPackages: {}
-jobs:
-  Job-41:
-    excludeSelector: ""
-    id: 41
-    includeSelector: "+{ location: DWH name: FCT* }"
-    name: RefreshFactTable
-    steps: []
-    subgraphs: []
+jobs: {}
 locations:
   DWH:
     mappingDefinitions:
