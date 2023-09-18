@@ -43,7 +43,7 @@ steps:
               - columnReferences:
                   - columnCounter: 6aa8796f-2488-44a6-ab24-3f1ba78dacc0
                     stepCounter: 7fadceba-ad87-48a9-93ed-a6c19a041944
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_NAME")
           - columnReference:
               columnCounter: c16bf199-0619-4786-a122-c4d6736be810
               stepCounter: dec2bd5d-41de-4b77-8fa6-e448b1b57a41
@@ -57,7 +57,7 @@ steps:
               - columnReferences:
                   - columnCounter: bc5259bf-56e7-42d2-8f1d-d56b9f7004f3
                     stepCounter: 7fadceba-ad87-48a9-93ed-a6c19a041944
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_ADDRESS")
           - columnReference:
               columnCounter: 64eb7091-f923-48be-9489-95291b80700a
               stepCounter: dec2bd5d-41de-4b77-8fa6-e448b1b57a41
@@ -71,7 +71,7 @@ steps:
               - columnReferences:
                   - columnCounter: 58649fec-91e0-4bdb-b1fa-eb2eb3d7db65
                     stepCounter: 7fadceba-ad87-48a9-93ed-a6c19a041944
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_NATIONKEY")
           - columnReference:
               columnCounter: 7a9c42b1-e689-4225-86a0-e6fd3fb786b6
               stepCounter: dec2bd5d-41de-4b77-8fa6-e448b1b57a41
@@ -85,7 +85,7 @@ steps:
               - columnReferences:
                   - columnCounter: 377e8506-bfb0-44ce-9515-c170da8e7308
                     stepCounter: 7fadceba-ad87-48a9-93ed-a6c19a041944
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_PHONE")
           - columnReference:
               columnCounter: e8bdcae2-1d40-4431-abaa-03662df96df5
               stepCounter: dec2bd5d-41de-4b77-8fa6-e448b1b57a41
@@ -99,7 +99,7 @@ steps:
               - columnReferences:
                   - columnCounter: b4ea0a39-3875-4946-b670-7e81c009c6a1
                     stepCounter: 7fadceba-ad87-48a9-93ed-a6c19a041944
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_ACCTBAL")
           - columnReference:
               columnCounter: 64824c27-d1f6-4898-aca9-7a8ab4408b05
               stepCounter: dec2bd5d-41de-4b77-8fa6-e448b1b57a41
@@ -113,7 +113,7 @@ steps:
               - columnReferences:
                   - columnCounter: 3ac6c440-1f9d-4336-8c76-7592d6217277
                     stepCounter: 7fadceba-ad87-48a9-93ed-a6c19a041944
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_MKTSEGMENT")
           - columnReference:
               columnCounter: 76af6770-a82d-4f19-9116-ca1f6b9c4a90
               stepCounter: dec2bd5d-41de-4b77-8fa6-e448b1b57a41
@@ -127,7 +127,7 @@ steps:
               - columnReferences:
                   - columnCounter: ef5364de-c61d-4c2b-bdd2-f4788652639f
                     stepCounter: 7fadceba-ad87-48a9-93ed-a6c19a041944
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_COMMENT")
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
