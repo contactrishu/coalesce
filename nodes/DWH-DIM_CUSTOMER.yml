@@ -7,7 +7,7 @@ steps:
         testsEnabled: true
       database: ""
       deployEnabled: true
-      description: Comment made directly in Main
+      description: Comment made in Branch Demo1
       isMultisource: false
       locationName: DWH
       materializationType: table
