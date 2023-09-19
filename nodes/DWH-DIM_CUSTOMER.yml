@@ -7,7 +7,7 @@ steps:
         testsEnabled: true
       database: ""
       deployEnabled: true
-      description: Customer data as defined by TPC-H
+      description: Comment made directly in Main
       isMultisource: false
       locationName: DWH
       materializationType: table
