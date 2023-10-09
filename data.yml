@@ -1,6 +1,13 @@
 defaultStorageMapping: DWH
 installedPackages: {}
-jobs: {}
+jobs:
+  Job-49:
+    excludeSelector: ""
+    id: 49
+    includeSelector: "+{ name: FCT* }"
+    name: Factrefresh
+    steps: []
+    subgraphs: []
 locations:
   DWH:
     mappingDefinitions:
