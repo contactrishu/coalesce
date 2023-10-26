@@ -1,0 +1,64 @@
+steps:
+  REGION-2a7d8078-9e8f-4cc2-bedd-a7a41e859942:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationID: ""
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: db8a1b95-c27d-47bc-9958-91b6c4084440
+              stepCounter: 2a7d8078-9e8f-4cc2-bedd-a7a41e859942
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1c008a5b-5715-44be-8e72-91e6d0368144
+              stepCounter: 2a7d8078-9e8f-4cc2-bedd-a7a41e859942
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 550a6aa3-97ff-48c1-9be9-0d601dd05f56
+              stepCounter: 2a7d8078-9e8f-4cc2-bedd-a7a41e859942
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 2a7d8078-9e8f-4cc2-bedd-a7a41e859942
