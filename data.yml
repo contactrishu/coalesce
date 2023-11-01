@@ -4,7 +4,7 @@ jobs:
   Job-49:
     excludeSelector: ""
     id: 49
-    includeSelector: "+{name: FCT*}"
+    includeSelector: "+{ location: DWH name: FCT_ORDERS_LINEITEM_DIM }"
     name: Factrefresh
     steps: []
     subgraphs: []
@@ -3327,7 +3327,6 @@ stepTypes:
           items:
 
           - displayName: Create Task
-            enableIf: "{{config.cdcTableEnabled}}"
             attributeName: taskEnabled
             type: toggleButton
             default: false
