@@ -152,6 +152,27 @@ steps:
                   - columnCounter: ee1ccc75-6607-40ce-acde-2845ebff5d18
                     stepCounter: bb162c33-8313-4af2-8d8c-f14ea9468d75
                 transform: UPPER("CUSTOMER"."C_COMMENT")
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c9e92b4f-fc17-4f5e-ab8a-db329ad3ba46
+              stepCounter: 02bbb4cf-f747-4f5d-bb27-d1cc75303781
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: C_CALC
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: "\"CUSTOMER\".\"C_NAME\" || \"CUSTOMER\".\"C_PHONE\""
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs:
           - hasNull
