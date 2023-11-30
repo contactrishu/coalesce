@@ -4,7 +4,7 @@ jobs:
   Job-49:
     excludeSelector: ""
     id: 49
-    includeSelector: "+{name: FCT_*}"
+    includeSelector: "+{name: FCT*}"
     name: Factrefresh
     steps: []
     subgraphs: []
