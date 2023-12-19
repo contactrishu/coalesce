@@ -230,7 +230,7 @@ steps:
               columnCounter: 7e5038e9-9ee5-4050-8cbc-81eb1fc350db
               stepCounter: a92a8fdd-2e2a-4b1a-a8d2-495f789035a5
             dataType: VARCHAR(44)
-            description: ""
+            description: sample comment
             hashColumns: []
             hashDetails: null
             name: L_COMMENT
