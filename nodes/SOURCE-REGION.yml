@@ -1,0 +1,63 @@
+steps:
+  REGION-5bf1ac51-25b7-46d0-961b-4f5a4146bb15:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3302322c-fcbf-4d05-9b2b-d16b0b068723
+              stepCounter: 5bf1ac51-25b7-46d0-961b-4f5a4146bb15
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c853915b-862c-49e1-a5ad-ef288ebd24b0
+              stepCounter: 5bf1ac51-25b7-46d0-961b-4f5a4146bb15
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5d8ac173-0d74-4fc1-b43d-d66fdfdbd81b
+              stepCounter: 5bf1ac51-25b7-46d0-961b-4f5a4146bb15
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 5bf1ac51-25b7-46d0-961b-4f5a4146bb15
