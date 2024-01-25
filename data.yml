@@ -4,7 +4,7 @@ jobs:
   Job-49:
     excludeSelector: ""
     id: 49
-    includeSelector: "+{ location: DWH name: FCT_LINEITEM_ORDERS }"
+    includeSelector: ""
     name: Factrefresh
     steps: []
     subgraphs: []
