@@ -1,0 +1,63 @@
+steps:
+  REGION-2bb794f3-fb1f-424f-ad40-df21ed2bc263:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: dc05d006-3d08-4a96-a277-2dcb50a022f0
+              stepCounter: 2bb794f3-fb1f-424f-ad40-df21ed2bc263
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2aa4be65-7b8e-43c6-bbf6-35b3dd9464b9
+              stepCounter: 2bb794f3-fb1f-424f-ad40-df21ed2bc263
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 3bd4f3fd-10b6-4c60-a85e-1358b5d2dddb
+              stepCounter: 2bb794f3-fb1f-424f-ad40-df21ed2bc263
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 2bb794f3-fb1f-424f-ad40-df21ed2bc263
