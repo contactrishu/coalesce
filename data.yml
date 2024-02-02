@@ -11,7 +11,7 @@ jobs:
   Job-61:
     excludeSelector: ""
     id: 61
-    includeSelector: "+{name: STG*}"
+    includeSelector: ""
     name: LoadStage
     steps: []
     subgraphs: []
