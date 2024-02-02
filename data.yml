@@ -8,6 +8,13 @@ jobs:
     name: Factrefresh
     steps: []
     subgraphs: []
+  Job-61:
+    excludeSelector: ""
+    id: 61
+    includeSelector: "+{name: STG*}"
+    name: LoadStage
+    steps: []
+    subgraphs: []
 locations:
   DWH:
     mappingDefinitions:
