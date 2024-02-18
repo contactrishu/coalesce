@@ -4,7 +4,7 @@ jobs:
   Job-49:
     excludeSelector: ""
     id: 49
-    includeSelector: "+{ location: DWH name: FCT_LINEITEM_ORDERS_DIM }"
+    includeSelector: ""
     name: Factrefresh
     steps: []
     subgraphs: []
@@ -12,7 +12,7 @@ jobs:
     excludeSelector: ""
     id: 61
     includeSelector: ""
-    name: LoadStage
+    name: DimensionRefresh
     steps: []
     subgraphs: []
 locations:
