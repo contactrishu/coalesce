@@ -466,6 +466,22 @@ steps:
                   - columnCounter: 318f56ff-531e-44b2-9f41-31974d3f5ce4
                     stepCounter: c6a7c2b0-f9a6-4ebc-b21d-e9ea8e1f2618
                 transform: ""
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9c868915-ebe8-4cee-9503-3ec56aef7d01
+              stepCounter: 968051d9-5767-4975-b0c7-095561f67d3e
+            dataType: STRING
+            description: ""
+            name: C_CAT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: cbea56f6-2dde-42e6-be12-adf980fbee70
+                    stepCounter: c6a7c2b0-f9a6-4ebc-b21d-e9ea8e1f2618
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:

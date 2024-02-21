@@ -152,6 +152,27 @@ steps:
                   - columnCounter: 0a24e311-2408-43a1-930d-78c821ac2865
                     stepCounter: 3b966d50-e567-436c-a366-948bbcacc839
                 transform: UPPER("CUSTOMER"."C_COMMENT")
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7d46550e-c4bb-468e-81f3-8af54a121f61
+              stepCounter: 87768e0c-0a31-4606-b97b-a4e66f14fc0d
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: C_CAT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: CASE WHEN "CUSTOMER"."C_ACCTBAL" > 0 THEN 'HNI' ELSE 'RETAIL' END
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs:
           - hasNull

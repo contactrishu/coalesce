@@ -257,6 +257,22 @@ steps:
             sourceColumnReferences:
               - columnReferences: []
                 transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+          - acceptedValues:
+              strictMatch: false
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cbea56f6-2dde-42e6-be12-adf980fbee70
+              stepCounter: c6a7c2b0-f9a6-4ebc-b21d-e9ea8e1f2618
+            dataType: STRING
+            description: ""
+            name: C_CAT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 7d46550e-c4bb-468e-81f3-8af54a121f61
+                    stepCounter: 87768e0c-0a31-4606-b97b-a4e66f14fc0d
+                transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
