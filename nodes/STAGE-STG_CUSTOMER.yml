@@ -43,7 +43,7 @@ steps:
               - columnReferences:
                   - columnCounter: 7d5ec41d-c130-4955-a4f2-6a4aaeb6bf0f
                     stepCounter: 214ce9d5-d61f-4c01-ae35-e12d6460cbc8
-                transform: ""
+                transform: UPPER("CUSTOMER"."C_NAME")
           - columnReference:
               columnCounter: 69a00b7c-1ca2-4ff3-8401-9503bb2daf98
               stepCounter: 837e080c-2c0a-478d-aa03-404efef6af76
@@ -128,6 +128,27 @@ steps:
                   - columnCounter: a9b9eca0-58c8-4af4-9e0d-d98d10eb58d7
                     stepCounter: 214ce9d5-d61f-4c01-ae35-e12d6460cbc8
                 transform: ""
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ce0eba49-62bd-4536-8213-523970b26a9f
+              stepCounter: 837e080c-2c0a-478d-aa03-404efef6af76
+            config: {}
+            dataType: STRING
+            defaultValue: ""
+            description: ""
+            keyColumnType: None
+            name: C_VALUE
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: "0"
+                    stepCounter: "0"
+                transform: CASE WHEN "CUSTOMER"."C_ACCTBAL" > 0 THEN 'HNI' ELSE 'RETAIL' END
+            systemColumnType: None
+            transform: ""
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
