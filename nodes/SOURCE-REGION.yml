@@ -1,0 +1,63 @@
+steps:
+  REGION-4e979b8a-dcc1-4a42-9bed-c87ebcffce66:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: Region data as defined by TPC-H
+      locationName: SOURCE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 5ef90ccc-4d09-4fc5-8354-fea2d30e5c05
+              stepCounter: 4e979b8a-dcc1-4a42-9bed-c87ebcffce66
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: R_REGIONKEY
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 805afead-6fb9-4baa-8227-961946a09c8c
+              stepCounter: 4e979b8a-dcc1-4a42-9bed-c87ebcffce66
+            config: {}
+            dataType: VARCHAR(25)
+            defaultValue: ""
+            description: ""
+            name: R_NAME
+            nullable: false
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7b83d23b-6056-461a-9a52-0b61606981ff
+              stepCounter: 4e979b8a-dcc1-4a42-9bed-c87ebcffce66
+            config: {}
+            dataType: VARCHAR(152)
+            defaultValue: ""
+            description: ""
+            name: R_COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('SOURCE', 'REGION') }}
+      name: REGION
+      schema: ""
+      sqlType: Source
+      table: REGION
+      type: sourceInput
+    stepCounter: 4e979b8a-dcc1-4a42-9bed-c87ebcffce66
